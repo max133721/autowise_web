@@ -1,15 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
 
-const rootElement = document.getElementById('root');
-if (!rootElement) {
-  throw new Error("Could not find root element to mount to");
+function App() {
+  return (
+    <div style={{ padding: '20px', fontFamily: 'sans-serif', color: 'white', backgroundColor: '#0f172a', minHeight: '100vh' }}>
+      <h1>AutoWise</h1>
+      <p>Aplikacja działa poprawnie!</p>
+    </div>
+  );
 }
 
-const root = ReactDOM.createRoot(rootElement);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+export default App;
